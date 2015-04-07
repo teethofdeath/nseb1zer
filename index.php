@@ -12,7 +12,7 @@ const APPSECRET = "157067a54d1cf720aa4a524b04f55eb3";
 
 FacebookSession::setDefaultApplication(APPID, APPSECRET);
 
-$helper = new FacebookRedirectLoginHelper('http://localhost/');
+$helper = new FacebookRedirectLoginHelper('https://nseb1zer.herokuapp.com/');
 $loginUrl = $helper->getLoginUrl();
 $session = $helper->getSessionFromRedirect();
 
