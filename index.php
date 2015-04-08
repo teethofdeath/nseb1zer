@@ -2,6 +2,8 @@
 
 session_start();
 
+ini_set("display_errors", "1");
+
 require("vendor/autoload.php");
 
 use Facebook\FacebookSession;
@@ -73,8 +75,7 @@ if ($session) {
     //transform la data graphObject
     $user = $response->getGraphObject("Facebook\GraphUser");
     echo "<pre>";
-    var_dump($session);
-    var_dump('aaaaaa');
+    print_r($user);
     echo "</pre>";
 
 } else {
