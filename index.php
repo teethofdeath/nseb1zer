@@ -2,6 +2,9 @@
 
 require("vendor/autoload.php");
 
+use Facebook\FacebookSession;
+use Facebook\FacebookRedirectLoginHelper;
+
 const APPID = "662050003940490";
 const APPSECRET = "157067a54d1cf720aa4a524b04f55eb3";
 FacebookSession::setDefaultApplication(APPID, APPSECRET);
