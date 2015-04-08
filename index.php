@@ -74,6 +74,7 @@ if ($session) {
     $user = $response->getGraphObject("Facebook\GraphUser");
     echo "<pre>";
     var_dump($session);
+    var_dump('aaaaaa');
     echo "</pre>";
 
 } else {
